@@ -21,7 +21,7 @@ const Card = () => {
       icon: ExtraCurricular,
       gradient: "from-green-500 to-green-600",
       bgColor: "bg-green-50",
-      iconBg: "bg-green-100"
+      iconBg: "bg-green-100 "
     },
     {
       title: "College and Career Counseling",
