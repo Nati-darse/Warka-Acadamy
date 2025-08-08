@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import Counseling from '../assets/CardImages/Counseling.png';
+import Counseling from '../assets/Cardimages/Counseling.png';
 import ExtraCurricular from '../assets/cardImages/football-svgrepo-com.svg';
 import HightQualityEducation from '../assets/cardImages/graduation-cap-svgrepo-com.svg';
 import Wellness from '../assets/cardImages/muscles-muscle-svgrepo-com.svg';
