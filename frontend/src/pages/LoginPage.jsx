@@ -122,10 +122,8 @@ const LoginPage = () => {
             transition={{ duration: 0.6 }}
             className="text-center mb-8"
           >
-            <div className="w-20 h-20 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
-              <span className="text-white font-bold text-2xl">W</span>
-            </div>
-            <h1 className="text-3xl font-bold text-gray-900 mb-2">
+            
+            <h1 className="text-3xl font-bold text-gray-900 mb-4 mt-2">
               Welcome Back
             </h1>
             <p className="text-gray-600">

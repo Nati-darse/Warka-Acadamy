@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
+import logo from "../assets/warkalogo.png";
 
 const Navbar = ({ isStudentPage = false, isHomePage = false }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -49,16 +50,10 @@ const Navbar = ({ isStudentPage = false, isHomePage = false }) => {
             className="flex items-center space-x-3"
           >
             <Link to="/" className="flex items-center space-x-3 group">
-              <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300">
-                <span className="text-white font-bold text-lg">W</span>
+              
+              <div className="w-40 h-10 ">  
+                <img src={logo} alt="warka accadamy logo"/>
               </div>
-              <span className={`text-2xl font-bold ${
-                scrolled 
-                  ? 'bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent' 
-                  : 'text-gray-900 drop-shadow-sm'
-              }`}>
-                Warka Academy
-              </span>
             </Link>
           </motion.div>
 
