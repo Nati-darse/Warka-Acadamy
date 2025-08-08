@@ -1,4 +1,4 @@
-# School Management System
+# School Management System for Warka Acadamy 
 
 A comprehensive platform designed to streamline the administrative and operational processes of schools. This project provides an efficient and user-friendly solution for managing students, teachers, classes, schedules, and other school-related activities.
 
