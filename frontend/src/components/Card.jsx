@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import Counseling from '../assets/Cardimages/Counseling.png';
-import ExtraCurricular from '../assets/cardImages/football-svgrepo-com.svg';
-import HightQualityEducation from '../assets/cardImages/graduation-cap-svgrepo-com.svg';
-import Wellness from '../assets/cardImages/muscles-muscle-svgrepo-com.svg';
+import ExtraCurricular from '../assets/cardimages/football-svgrepo-com.svg';
+import HightQualityEducation from '../assets/cardimages/graduation-cap-svgrepo-com.svg';
+import Wellness from '../assets/cardimages/muscles-muscle-svgrepo-com.svg';
 
 const Card = () => {
   const providedServices = [
