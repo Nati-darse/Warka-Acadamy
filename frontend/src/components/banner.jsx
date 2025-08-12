@@ -30,8 +30,8 @@ const Banner = () => {
         <div className="absolute bottom-20 right-10 text-4xl opacity-10 animate-pulse animation-delay-4000">🌟</div>
       </div>
 
-      <div className="container mx-auto px-4 py-16 relative z-10">
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
+      <div className="container mx-auto px-16 py-16 relative z-10">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-2">
           {/* Left Content */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -43,9 +43,9 @@ const Banner = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="inline-flex items-center bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-medium mb-6"
+              className="inline-flex items-center bg-blue-100 text-blue-800 px-12 py-2 rounded-full text-sm font-medium mb-6"
             >
-              <span className="mr-2">🚀</span>
+              <span className="mr-4">🚀</span>
               Welcome to the Future of Education
             </motion.div>
 
