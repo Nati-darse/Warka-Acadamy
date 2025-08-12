@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import BannerImage from "../assets/file1.png";
+import BannerImage from "/file1.png";
 
 const Banner = () => {
   const scrollToTestimonials = () => {

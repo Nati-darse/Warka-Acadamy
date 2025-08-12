@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import warkaLogo from '../../assets/warkalogo.png';
+import warkaLogo from '/warkalogo.png';
 
 const LivingSituationPage = ({ onChoice }) => {
   const [livingWith, setLivingWith] = useState("");

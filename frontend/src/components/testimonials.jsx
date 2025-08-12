@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import image1 from "../assets/1.png";
-import image2 from "../assets/2.png";
-import image3 from "../assets/3.png";
-import image5 from "../assets/5.png";
+import image1 from "/1.png";
+import image2 from "/2.png";
+import image3 from "/3.png";
+import image5 from "/5.png";
 
 const Testimonials = () => {
   const [activeTestimonial, setActiveTestimonial] = useState(0);

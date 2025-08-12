@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
-import logo from "../assets/warkalogo.png";
+import logo from "/warkalogo.png";
 
 const Navbar = ({ isStudentPage = false, isHomePage = false }) => {
   const [isOpen, setIsOpen] = useState(false);

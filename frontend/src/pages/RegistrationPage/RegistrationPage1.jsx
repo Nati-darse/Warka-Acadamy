@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import warkaLogo from "../../assets/warka_logo.jpeg";
+import warkaLogo from "/warkalogo.png";
 
 const RegistrationPage = () => {
   const [isNewStudent, setIsNewStudent] = useState(null); // State for new or returning student

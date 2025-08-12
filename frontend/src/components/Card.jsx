@@ -1,16 +1,12 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import Counseling from '../assets/Counseling.png';
-import ExtraCurricular from '../assets/cardimages/football-svgrepo-com.svg';
-import HightQualityEducation from '../assets/cardimages/graduation-cap-svgrepo-com.svg';
-import Wellness from '../assets/cardimages/muscles-muscle-svgrepo-com.svg';
 
 const Card = () => {
   const providedServices = [
     {
       title: "High Quality Education",
       description: "Our curriculum is designed to foster critical thinking, creativity, and academic excellence. We offer advanced courses such as honors, AP, and IB that challenge students and prepare them for success in higher education and their careers. Additionally, we emphasize personalized learning to support individual academic growth, helping each student unlock their full potential.",
-      icon: HightQualityEducation,
+      icon: "/cardimages/graduation-cap-svgrepo-com.svg",
       gradient: "from-blue-500 to-blue-600",
       bgColor: "bg-blue-50",
       iconBg: "bg-blue-100"
@@ -18,7 +14,7 @@ const Card = () => {
     {
       title: "Extracurricular Activities",
       description: "Our school offers a wide variety of extracurricular activities ranging from sports teams to arts programs, leadership opportunities, and clubs. These activities allow students to explore their interests and passions outside the classroom while building essential life skills such as teamwork, leadership, and time management. Students are encouraged to participate in a range of activities to enhance their personal development.",
-      icon: ExtraCurricular,
+      icon:"/cardimages/football-svgrepo-com.svg",
       gradient: "from-green-500 to-green-600",
       bgColor: "bg-green-50",
       iconBg: "bg-green-100 "
@@ -26,7 +22,7 @@ const Card = () => {
     {
       title: "College and Career Counseling",
       description: "Our dedicated college and career counselors assist students throughout their academic journey, helping them navigate the college application process, from selecting the right universities to preparing application materials. We also offer career counseling and internships to give students a head start in their professional lives. With personalized guidance, our counselors ensure that each student is well-prepared for the future.",
-      icon: Counseling,
+      icon: "/cardimages/Counseling.png",
       gradient: "from-purple-500 to-purple-600",
       bgColor: "bg-purple-50",
       iconBg: "bg-purple-100"
@@ -34,7 +30,7 @@ const Card = () => {
     {
       title: "Student Wellness and Support Services",
       description: "At our school, we prioritize the physical and emotional well-being of our students. We offer a range of wellness programs, including mental health support, counseling, and stress management workshops. Our counselors are always available to support students with personal challenges, ensuring they have the resources and assistance needed to thrive both inside and outside the classroom.",
-      icon: Wellness,
+      icon: "/cardimages/muscles-muscle-svgrepo-com.svg",
       gradient: "from-orange-500 to-orange-600",
       bgColor: "bg-orange-50",
       iconBg: "bg-orange-100"

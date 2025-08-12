@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import warkaLogo from "../../assets/warka_logo.jpeg"; 
+// import warkaLogo from "/warkalogo.png"; 
 const GuardianForm = () => {
   const [guardianInfo, setGuardianInfo] = useState({});
 
@@ -28,7 +28,7 @@ const GuardianForm = () => {
       {/* Header Section */}
       <div className="flex items-center mb-8">
         <img
-          src={warkaLogo}
+          src="/warkalogo.png"
           alt="Warka Academy Logo"
           className="h-20 w-20 object-cover"
         />
