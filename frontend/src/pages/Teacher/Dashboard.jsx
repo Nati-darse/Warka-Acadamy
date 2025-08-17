@@ -1,25 +1,70 @@
-import { Outlet, NavLink } from "react-router-dom";
 
-export default function TeacherDashboard() {
+import { NavLink, Outlet } from "react-router-dom";
+
+const TeacherDashboard = () => {
   return (
-    <div className="flex min-h-screen bg-gray-100">
+    <div className="flex h-screen bg-gray-100">
       {/* Sidebar */}
-      <aside className="w-64 bg-blue-800 text-white flex flex-col p-4">
-        <h2 className="text-2xl font-bold mb-6">Teacher Panel</h2>
-        <nav className="flex flex-col space-y-2">
-          <NavLink to="classes" className="hover:bg-blue-700 p-2 rounded">Classes</NavLink>
-          <NavLink to="grades" className="hover:bg-blue-700 p-2 rounded">Grades</NavLink>
-          <NavLink to="assignments" className="hover:bg-blue-700 p-2 rounded">Assignments</NavLink>
-          <NavLink to="announcements" className="hover:bg-blue-700 p-2 rounded">Announcements</NavLink>
-          <NavLink to="schedule" className="hover:bg-blue-700 p-2 rounded">Schedule</NavLink>
-          <NavLink to="profile" className="hover:bg-blue-700 p-2 rounded">Profile</NavLink>
+      <aside className="w-64 bg-white shadow-md p-4">
+        <h2 className="text-xl font-bold mb-6">Teacher Dashboard</h2>
+        <nav className="flex flex-col gap-3">
+          <NavLink
+            to="classes"
+            className={({ isActive }) =>
+              `p-2 rounded ${isActive ? "bg-blue-500 text-white" : "hover:bg-gray-200"}`
+            }
+          >
+            Classes
+          </NavLink>
+          <NavLink
+            to="students"
+            className={({ isActive }) =>
+              `p-2 rounded ${isActive ? "bg-blue-500 text-white" : "hover:bg-gray-200"}`
+            }
+          >
+            Students
+          </NavLink>
+          <NavLink
+            to="assignments"
+            className={({ isActive }) =>
+              `p-2 rounded ${isActive ? "bg-blue-500 text-white" : "hover:bg-gray-200"}`
+            }
+          >
+            Assignments
+          </NavLink>
+          <NavLink
+            to="announcements"
+            className={({ isActive }) =>
+              `p-2 rounded ${isActive ? "bg-blue-500 text-white" : "hover:bg-gray-200"}`
+            }
+          >
+            Announcements
+          </NavLink>
+          <NavLink
+            to="schedule"
+            className={({ isActive }) =>
+              `p-2 rounded ${isActive ? "bg-blue-500 text-white" : "hover:bg-gray-200"}`
+            }
+          >
+            Schedule
+          </NavLink>
+          <NavLink
+            to="profile"
+            className={({ isActive }) =>
+              `p-2 rounded ${isActive ? "bg-blue-500 text-white" : "hover:bg-gray-200"}`
+            }
+          >
+            Profile
+          </NavLink>
         </nav>
       </aside>
 
-      {/* Main Content */}
-      <main className="flex-1 p-6">
-        <Outlet />
+      {/* Main content */}
+      <main className="flex-1 p-6 overflow-y-auto">
+        <Outlet /> {/* This is where child routes will render */}
       </main>
     </div>
   );
-}
+};
+
+export default TeacherDashboard;

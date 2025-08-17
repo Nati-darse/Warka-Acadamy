@@ -6,7 +6,8 @@ export default function TeacherClasses() {
     queryKey: ["teacherClasses"],
     queryFn: async () => {
       const res = await axios.get("/api/teacher/classes");
-      return res.data;
+      // Ensure it always returns an array
+      return Array.isArray(res.data) ? res.data : res.data.classes || [];
     },
   });
 
@@ -16,15 +17,22 @@ export default function TeacherClasses() {
   return (
     <div>
       <h1 className="text-2xl font-bold mb-4">My Classes</h1>
-      <ul className="space-y-3">
-        {data.map((cls) => (
-          <li key={cls._id} className="p-4 bg-white rounded shadow">
-            <h2 className="text-lg font-semibold">{cls.subject}</h2>
-            <p>Grade: {cls.gradeLevel}</p>
-            <p>Students: {cls.students.length}</p>
-          </li>
-        ))}
-      </ul>
+      {data.length === 0 ? (
+        <p>No classes found.</p>
+      ) : (
+        <ul className="space-y-4">
+          {data.map((cls) => (
+            <li key={cls._id} className="p-4 bg-white rounded shadow">
+              <h2 className="text-lg font-semibold">{cls.subject}</h2>
+              <p>Grade: {cls.gradeLevel}</p>
+              <p>Students: {cls.students?.length || 0}</p>
+              <button className="mt-2 bg-blue-600 text-white px-4 py-2 rounded">
+                Manage Attendance
+              </button>
+            </li>
+          ))}
+        </ul>
+      )}
     </div>
   );
 }
